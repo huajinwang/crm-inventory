@@ -16,7 +16,7 @@ const defaultOptionsDev = {
 };
 
 //部署模式，服务器地址
-const httpServerPro = '';
+const httpServerPro = 'http://81.68.111.52';
 //同域请求头配置
 const defaultOptionsProd = {
     credentials: 'same-origin',
@@ -30,12 +30,12 @@ const defaultOptionsProd = {
 //开发模式数据库地址
 const mongooseConnectDev = "mongodb://localhost:27017/accountSystem";
 //部署模式数据库地址
-//const mongooseConnectPro = "mongodb://localhost:27017/accountSystem";
+const mongooseConnectPro = "mongodb://81.68.111.52:27017/accountSystem";
 
 
 
 const uploadImgServerDev = 'localhost';
-//onst uploadImgServerPro = '192.168.195.74'; 
+const uploadImgServerPro = '192.168.195.74'; 
 
 module.exports = {
 	httpServer: debug ? httpServerDev:httpServerPro,

@@ -20,7 +20,7 @@ router.route('/')
 		}
 		Product.count(queryCondition, (err, count)=>{
 			Product.find(queryCondition)
-                .limit(limit)
+                .limit(null)
                 .skip(skip)
                 .exec((err, products)=>{
                     if(err){
